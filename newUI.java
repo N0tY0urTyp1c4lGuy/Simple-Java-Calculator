@@ -32,7 +32,6 @@ public class UI extends JFrame implements ActionListener {
 		initialize();
 		setActionListener();
 		
-		setVisible(true);
 	}
 
 	public void setFrame(){
