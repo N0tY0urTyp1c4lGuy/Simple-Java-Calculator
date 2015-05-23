@@ -2,10 +2,10 @@
  * @name        Simple Java Calculator
  * @package     ph.calculator
  * @file        UI.java
- * @author      Christian Balderrama
- * @email       softwaredevxtian@yahoo.com
- * @link        http://github.com/christianbalderrama
- * @copyright   Copyright Christian Balderrama, All Rights Reserved.
+ * @author      SORIA Pierre-Henry
+ * @email       pierrehs@hotmail.com
+ * @link        http://github.com/pH-7
+ * @copyright   Copyright Pierre-Henry SORIA, All Rights Reserved.
  * @license     Apache (http://www.apache.org/licenses/LICENSE-2.0)
  * @create      2012-03-30
  */
@@ -27,7 +27,6 @@ public class UI extends JFrame implements ActionListener {
     private int add = 0, minus = 0, multiply = 0, divide = 0;
     
 	public newUI() {
-		
 		setFrame();
 		setPanel();
 		initialize();
