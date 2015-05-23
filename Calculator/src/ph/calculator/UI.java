@@ -2,10 +2,10 @@
  * @name        Simple Java Calculator
  * @package     ph.calculator
  * @file        UI.java
- * @author      SORIA Pierre-Henry
- * @email       pierrehs@hotmail.com
- * @link        http://github.com/pH-7
- * @copyright   Copyright Pierre-Henry SORIA, All Rights Reserved.
+ * @author      Christian Balderrama
+ * @email       softwaredevxtian@yahoo.com
+ * @link        http://github.com/christianbalderrama
+ * @copyright   Copyright Christian Balderrama, All Rights Reserved.
  * @license     Apache (http://www.apache.org/licenses/LICENSE-2.0)
  * @create      2012-03-30
  */
@@ -27,6 +27,7 @@ public class UI extends JFrame implements ActionListener {
     private int add = 0, minus = 0, multiply = 0, divide = 0;
     
 	public newUI() {
+		
 		setFrame();
 		setPanel();
 		initialize();
@@ -57,7 +58,6 @@ public class UI extends JFrame implements ActionListener {
 		panel.add(but9);
 		panel.add(but0);
 		panel.add(butCancel);
-		
 		panel.add(butAdd);
 		panel.add(butMinus);
 		panel.add(butMultiply);
@@ -78,7 +78,6 @@ public class UI extends JFrame implements ActionListener {
 		but8 = new JButton("8");
 		but9 = new JButton("9");
 		but0 = new JButton("0");
-		
 		butAdd = new JButton("+");
 		butMinus = new JButton("-");
 		butMultiply = new JButton("*");
@@ -105,7 +104,6 @@ public class UI extends JFrame implements ActionListener {
 		butDivide.addActionListener(this);
 		butEqual.addActionListener(this);
 		butCancel.addActionListener(this);
-		
 	}
 
 	@Override
@@ -158,17 +156,14 @@ public class UI extends JFrame implements ActionListener {
 				result = num1+num2;
 				text.setText(Double.toString(result));
 			}
-			
 			else if(minus > 0) {
 				result = num1-num2;
 				text.setText(Double.toString(result));
 			}
-			
 			else if(multiply > 0) {
 				result = num1*num2;
 				text.setText(Double.toString(result));
 			}
-			
 			else(divide > 0) {
 				result = num1/num2;
 				text.setText(Double.toString(result));
